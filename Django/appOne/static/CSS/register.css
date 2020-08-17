@@ -1,0 +1,292 @@
+body{
+    background-image:url('/static/IMAGE/register1.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:630px;
+}
+#ct{
+    position: absolute;
+    color:blue;
+    font-weight:bold;
+    top: 10px;
+    right: 20px;
+    background-color: rgb(143, 209, 143);
+}
+#welcome{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    word-spacing: 20px;
+    font-size: 40px;
+    top: 0px;
+}
+#p_head{
+    display: inline;
+    letter-spacing: 3px;
+}
+#registration{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    top: 90px;
+}
+#div_1{
+    position: relative;
+    top: 150px;
+    left: 50%;
+    width: 540px;
+    height: 240px;
+    transform: translate(-50%);
+    border-radius: 10px;
+}
+#form_1{
+    position: absolute;
+    margin: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/* for firstname input */
+#div_2{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 15px;
+    top: 15px;
+}
+#input_1{
+    position: absolute;
+    margin: 10px 15px;
+    width: 160px;
+    height: 25px;
+    border-radius: 5px;
+    border:1px solid black;
+    outline: none;
+    padding: 2px 5px;
+}
+#firstname{
+    position: absolute;
+    left: 20px;
+    width: fit-content;
+    font-size: 15px;
+    color: #999;
+}
+#input_1:focus{
+    border-color:white;
+}
+#input_1:focus + #firstname{
+    top: -10px;
+    left: 20px;
+    color: blue;
+    font-size: 12px;
+}
+/* For Last Name */
+#div_4{
+    position: absolute;
+    right: 30px;
+    top:15px;
+    width: 200px;
+    height: 50px;
+}
+#input_2{
+    position: absolute;
+    margin: 10px 15px;
+    padding: 2px 5px;
+    width: 160;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+#lastname{
+    position: absolute;
+    left: 20px;
+    width: fit-content;
+    font-size: 15px;
+    color: #999;
+}
+#input_2:focus{
+    border-color: white;
+}
+#input_2:focus + #lastname{
+    top: -10px;
+    left: 20px;
+    color: blue;
+    font-size: 12px;
+}
+/* For Username */
+#div_6{
+    position: absolute;
+    width: 170px;
+    height: 80px;
+    top: 75px;
+    left: 15px;
+    height: 45px;
+}
+#input_3{
+    position: absolute;
+    padding: 2px 5px;
+    width: 80%;
+    height: 25px;
+    left: 15px;
+    top: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+#username{
+    position: absolute;
+    left: 20px;
+    font-size: 15px;
+    color: #999;
+}
+#input_3:focus{
+    border-color: white;
+}
+#input_3:focus + #username{
+    top: -10px;
+    left: 20px;
+    color:blue;
+    font-size: 12px;
+}
+/* For E-mail */
+#div_8{
+    position: absolute;
+    width: 55%;
+    height: 45px;
+    right: 15px;
+    top: 75px;
+}
+#input_4{
+    position: absolute;
+    padding: 2px 5px;
+    height: 25px;
+    width: 90%;
+    top: 10px;
+    left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+#email{
+    position: absolute;
+    left: 15px;
+    width: fit-content;
+    color: #999;
+    font-size: 15px;
+}
+#input_4:focus{
+    border-color: white;
+}
+#input_4:focus + #email{
+    top: -10px;
+    left: 15px;
+    color: blue;
+    font-size: 12px;
+}
+/* For password */
+#div_10{
+    position: absolute;
+    top: 130px;
+    left: 15px;
+    width: 40%;
+    height: 45px;
+}
+#input_5{
+    position: absolute;
+    height: 25px;
+    padding: 2px 5px;
+    width: 80%;
+    top: 10px;
+    left: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+#password{
+    position: absolute;
+    left: 20px;
+    width: fit-content;
+    color: #999;
+}
+#input_5:focus{
+    border-color: white;
+}
+#input_5:focus + #password{
+    top: -10px;
+    left: 20px;
+    color: blue;
+    font-size: 12px;
+}
+/* For Comfirm */
+
+#div_12{
+    position: absolute;
+    top: 130px;
+    right: 30px;
+    width: 40%;
+    height: 45px;
+}
+#input_6{
+    position: absolute;
+    padding: 2px 5px;
+    height: 25px;
+    width: 80%;
+    top: 10px;
+    left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+#confirm{
+    position: absolute;
+    color: #999;
+    left: 15px;
+    width: fit-content;
+}
+#input_6:focus{
+    border-color: white;
+}
+#input_6:focus + #confirm{
+    top: -10px;
+    left: 15px;
+    color: blue;
+    font-size: 12px;
+}
+/* Link */
+a:link{
+    text-decoration: none;
+}
+#p3{
+    position: relative;
+    left: 110px;
+    top: 170px;
+    color: rgb(91, 91, 230);
+    width: fit-content;
+}
+#p3:hover{
+    color: blue;
+}
+/* for submit */
+#register{
+    position: relative;
+    top: 135px;
+    left: 35px;
+    background-color: rgb(91, 91, 230);
+}
+#register:hover{
+}
+#invalid{
+    position: absolute;
+    top: 137px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    font-size: 14px;
+}
+#error{
+    color:red;
+    text-align: center;
+}

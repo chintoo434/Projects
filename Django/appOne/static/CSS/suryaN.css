@@ -1,0 +1,165 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(94, 199, 240);
+  }
+  li {
+    
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color:rgb(65, 149, 245);
+  }
+  .active {
+    background-color: rgb(126, 144, 245);
+  }
+  #video{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width:440px;
+    top: 1100px;
+  }
+
+  #ifyou{
+    position: absolute;
+    width: 440px;
+    height: auto;
+    left: 80px;
+    top: 60px;
+    color:green;
+    text-shadow: 2px 2px 8px #FF0000;
+  }
+ #SuryaNamaskar{
+    position: absolute;
+    width: 560px;
+    height: auto;
+    right: 80px;
+    top: 60px;
+    color: green;
+    text-shadow: 2px 2px 8px #FF0000;
+  }
+#image{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 240px;
+    top: 560px;
+    left: 34%;
+
+  }
+  #Pranamasana{
+    position: absolute;
+    width: 320px;
+    height: auto;
+    left: 50px;
+    top: 290px;
+  }
+  #Hastauttanasana{
+    position: absolute;
+    width: 320px;
+    height: auto;
+    right: 35%;
+    top: 290px;
+  }
+  #HastaPadasana{
+    position: absolute;
+    width: 320px;
+    height: auto;
+    right: 50px;
+    top: 290px;
+  }
+  #AshwaSanchalanasana{
+    position: absolute;
+    width: 320px;
+    height: auto;
+    left: 50px;
+    top: 560px;
+  }
+  #Dandasana{
+    position: absolute;
+    width: 320px;
+    height: auto;
+    right: 50px;
+    top: 560px;
+  }
+  #AshtangaNamaskara{
+    position: absolute;
+    width: 320px;
+    height: auto;
+    left: 50px;
+    top: 730px;
+  }
+  #Bhujangasana{
+    position: absolute;
+    width: 320px;
+    height: auto;
+    right: 50px;
+    top: 730px;
+  }
+  #Parvatasana{
+    position: absolute;
+    width: 320px;
+    height: auto;
+    left: 50px;
+    top: 960px;
+  }
+  #AshwaSanchalanasana2{
+    position: absolute;
+    width: 320px;
+    height: auto;
+    left: 35%;
+    top: 960px;
+  }
+  #HastaPadasana2{
+    position: absolute;
+    width: 320px;
+    height: auto;
+    right: 50px;
+    top: 960px;
+  }
+  #Hastauttanasana2{
+    position: absolute;
+    width: 320px;
+    height: auto;
+    left: 50px;
+    top: 1130px;
+  }
+  #Pranamaasana2{
+    position: absolute;
+    width: 320px;
+    height: 400px;
+    right: 50px;
+    top: 1130px;
+  }
+#cap{
+    position: absolute;
+    top: 1400px;
+    left:42%;
+    color: blue;
+}
+p{
+    color:rgb(183, 0, 255);
+    text-shadow: 2px 2px 8px green;
+}
+
+h3{
+    color:rgb(255, 0, 157);
+    text-shadow: 2px 2px 8px blue;
+}
+h1,h4{
+  color: red;
+  text-shadow: 2px 2px 8px blue;
+}

@@ -1,0 +1,86 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(94, 199, 240);
+  }
+  li {
+    
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color:rgb(65, 149, 245);
+  }
+  .active {
+    background-color: rgb(126, 144, 245);
+  }
+  #anusara{
+    position: absolute;
+    color: rgb(233, 10, 21);
+    top: 450px;
+    right:80px;
+    width: 240px;
+    text-shadow: 2px 2px 8px rgb(0, 68, 255);
+  }
+  #anusara2{
+    position: absolute;
+    width: 320px;
+    height: 540px;
+    left: 50px;
+    top: 460px;
+    color:rgb(183, 0, 255);
+    text-shadow: 2px 2px 8px green;
+  }
+  #image{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 540px;
+    top: 320px;
+    left: 30%;
+  }
+  h2{
+    color: brown;
+    text-shadow: 2px 2px 8px rgb(98, 0, 255);
+  }
+  h3{
+    color: rgb(40, 64, 204);
+    text-shadow: 2px 2px 8px rgb(98, 0, 255);
+  }
+  h1{
+    color: rgb(233, 10, 21);
+    text-shadow: 2px 2px 8px rgb(0, 68, 255);
+  }
+  #b1{
+    font-size: 36px;
+    color:rgb(183, 0, 255);
+    text-shadow: 2px 2px 8px green;
+    margin-right: 10px;
+  }
+  #anusara3{
+    
+    position: absolute;
+    top: 60px;
+    left:100px;
+    width:1080px;
+    text-shadow: 2px 2px 8px rgb(0, 68, 255);
+  }
+  b{
+    font-size: 20px;
+    text-shadow: 2px 2px 8px green;
+    margin-right: 10px;
+    color: rgb(233, 10, 21);
+
+  }
+  #p1{
+    line-height: 1.6;
+  }

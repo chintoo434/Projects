@@ -1,0 +1,80 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(94, 199, 240);
+  }
+  li {
+    
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color:rgb(65, 149, 245);
+  }
+  .active {
+    background-color: rgb(126, 144, 245);
+  }
+  #gift{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 360px;
+    width: 540px;
+    top: 360px;
+    left: 23%;
+  }  
+  #benefits{
+    position:absolute;
+    width: 360px;
+    height: 400px;
+    top: 380px;
+    left: 50px;
+    color: rgb(2, 99, 23);
+    text-shadow: 2px 2px 8px #FF0000;
+  }
+  h3{
+    color: red;
+    text-shadow: 2px 2px 8px rgb(98, 0, 255);
+  }
+  #benefits2, #Vinyasa3{
+    color: brown;
+    text-shadow: 2px 2px 8px rgb(98, 0, 255);
+  }
+
+  #Vinyasa{
+    position: absolute;
+    color: rgb(233, 10, 21);
+    top: 380px;
+    right:100px;
+    width: 240px;
+    height: 440px;
+    text-shadow: 2px 2px 8px rgb(0, 68, 255);
+  }
+  #Vinyasa2{
+    
+    position: absolute;
+    color: rgb(233, 10, 21);
+    top: 60px;
+    left:100px;
+    width:540px;
+    text-shadow: 2px 2px 8px rgb(0, 68, 255);
+  }
+  #video{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    top: 100px;
+    right: 100px;
+  }
+

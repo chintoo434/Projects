@@ -1,0 +1,77 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(94, 199, 240);
+  }
+  li {
+    
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color:rgb(65, 149, 245);
+  }
+  .active {
+    background-color: rgb(126, 144, 245);
+  }
+  #video{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    top: 120px;
+    right: 50px;
+  }
+  #Kundalini{
+    position: absolute;
+    color: rgb(233, 10, 21);
+    top: 100px;
+    left:80px;
+    width: 360px;
+    text-shadow: 2px 2px 8px rgb(0, 68, 255);
+  }
+  #pose{
+    position: absolute;
+    top: 360px;
+    left: 80px;
+    color:rebeccapurple;
+    text-shadow: 2px 2px 8px #FF0000;
+  }
+  #benefits{
+    position:absolute;
+    width: 360px;
+    top: 540px;
+    right: 120px;
+    color: rgb(2, 99, 23);
+    text-shadow: 2px 2px 8px #FF0000;
+  }
+  b{
+    color: blue;
+    text-shadow: 1px 1px 4px green;
+  }
+  h3{
+    color: brown;
+    text-shadow: 2px 2px 8px rgb(98, 0, 255);
+  }
+  h2{
+    color: rgb(7, 24, 116);
+    text-shadow: 2px 2px 8px rgb(153, 0, 255);
+  }
+  #image{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 240px;
+    top: 650px;
+    left: 80px;
+  }

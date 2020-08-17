@@ -1,0 +1,63 @@
+
+#heading{
+
+    text-align:center;
+}
+
+
+#div_btn{
+   margin-bottom: 10px;
+}
+
+#button_in {
+    display: inline-block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    float:right;
+    margin-right:40px;
+    text-decoration:none;
+}
+
+#button_up {
+    display: inline-block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    margin-left:40px;
+    text-decoration:none;
+}
+
+
+#bkimage{
+    background: url('/static/IMAGE/home.jpg');
+    height:630px;
+}
+
+#yoga_journal
+{
+    width:200px;
+    position:absolute;
+    left:80px;
+    top:240px;
+}
+span {
+  float: left;
+  width: 0.7em;
+  font-size: 400%;
+  font-family: algerian, courier;
+  line-height: 80%;
+}
+
