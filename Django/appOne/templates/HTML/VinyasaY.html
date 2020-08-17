@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyasaa Yoga</title>
+    <link rel="stylesheet" href="{% static 'CSS/VinyasaY.css' %}">
+</head>
+<body>
+    
+
+    <ul >
+        <li><a href="/oneYoga">Home</a></li>
+        <li><a href="/suryaNamaskar">Surya Namaskar</a></li>
+        <li><a href="/BikramYoga">Bikram Yoga</a></li>
+        <li><a href="/HathaYoga">Hatha Yoga</a></li>
+        <li class="active"><a href="/VinyasaYoga">Vinyasa Yoga</a></li>
+        <li><a href="/KundaliniYoga">Kundalini Yoga</a></li>
+        <li><a href="/AnusaraYoga">Anusara Yoga</a></li>
+        <li><a href="/About">About</a></li>
+        <li><a href="#">Welcome, {{username}}</a></li>
+        <li><a href="/Logout">Logout</a></li>
+    </ul>
+
+    <div id="Vinyasa2">
+        <h1>Vinyasa</h1>
+        <h2> is a style of yoga characterized by stringing postures together so that you move 
+            from one to another, seamlessly, using breath. ... Put all this together and Vinyasa, 
+            is a breath initiated practice, that connects every action of our life with the intention 
+            of moving towards what is sacred, or most important to us.
+        </h2>
+    </div>
+
+
+
+
+    <div id="Vinyasa">
+        <h2 id="Vinyasa3">7 Reasons to Practice Vinyasa Yoga</h2>
+        <p>You stay focused by going with the flow</p>
+        <p> It’s all about variety</p>
+        <p>You can find your perfect yoga class</p>
+        <p>It pushes you to your limits</p>
+        <p>It gives you great cardio</p>
+        <p>It’s perfect for beginners</p>
+        <p>Vinyasa is fun!</p>
+    </div>
+
+    <div id="benefits">
+        <h2 id="benefits2">Benefits</h2>
+        <p>Endurance and strength training</p>
+        <p>Stability and balance.</p>
+        <p>Cardio workout</p>
+        <p>Lower stress, less anxiety</p>
+    </div>
+
+        <img id="gift" src="{% static 'IMAGE/VinyasaG.gif' %}" alt="Vinyasa poses">
+  
+
+        <div>
+            <video id="video" src="{% static 'IMAGE/Vinyasa.mp4' %}" controls autoplay muted></video>
+        </div>
+
+</body>
+</html>

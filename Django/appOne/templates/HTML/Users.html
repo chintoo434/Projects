@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="{% static 'CSS/User.css' %}">
+</head>
+<body>
+    
+
+    <ul >
+        <li><a href="/oneYoga">Home</a></li>
+        <li><a href="/suryaNamaskar">Surya Namaskar</a></li>
+        <li><a href="/BikramYoga">Bikram Yoga</a></li>
+        <li><a href="/HathaYoga">Hatha Yoga</a></li>
+        <li><a href="/VinyasaYoga">Vinyasa Yoga</a></li>
+        <li><a href="/KundaliniYoga">Kundalini Yoga</a></li>
+        <li><a href="/AnusaraYoga">Anusara Yoga</a></li>
+        <li><a href="/About">About</a></li>
+        <li class="active"><a href="/User">Welcome, {{username}}</a></li>
+        <li><a href="/Logout">Logout</a></li>
+    </ul>
+
+
+</body>
+</html>

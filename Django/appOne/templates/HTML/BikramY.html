@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikram Yoga</title>
+    <link rel="stylesheet" href="{% static 'CSS/BikramY.css' %}">
+</head>
+<body>
+
+
+    <ul >
+        <li><a href="/oneYoga">Home</a></li>
+        <li><a href="/suryaNamaskar">Surya Namaskar</a></li>
+        <li class="active"><a href="#">Bikram Yoga</a></li>
+        <li><a href="/HathaYoga">Hatha Yoga</a></li>
+        <li><a href="/VinyasaYoga">Vinyasa Yoga</a></li>
+        <li><a href="/KundaliniYoga">Kundalini Yoga</a></li>
+        <li><a href="/AnusaraYoga">Anusara Yoga</a></li>
+        <li><a href="/About">About</a></li>
+        <li><a href="#">Welcome, {{username}}</a></li>
+        <li><a href="/Logout">Logout</a></li>
+    </ul>
+
+
+    <div id="Bikram">
+        <h1>Bikram Yoga</h1>
+        <h2>Hot yoga offers a wide variety of benefits for both your mind and body. 
+            It can help you burn calories, build bone density, boost your cardiovascular 
+            fitness, and improve your flexibility. It may also help ease depression and 
+            reduce stress.
+        </h2>
+    </div>
+
+
+
+
+    <div>
+        <img id="image" src="{% static 'IMAGE/bikram01.jpg' %}">
+
+    <script type = "text/javascript">
+        var image = document.getElementById("image");
+        var currentPos = 0;
+        var images = ["{% static 'IMAGE/bikram01.jpg' %}", "{% static 'IMAGE/bikram2.jpg' %}",
+        "{% static 'IMAGE/bikram3.jpg' %}", "{% static 'IMAGE/bikram4.jpg' %}"]
+
+        function volgendefoto() {
+            if (++currentPos >= images.length)
+                currentPos = 0;
+
+            image.src = images[currentPos];
+        }
+
+        setInterval(volgendefoto, 3000);
+    </script>
+    </div>
+
+    <div id="benefits">
+        <h3>Benefits</h3>
+        <p>Improves flexibility</p>
+        <p>Burns more calories</p>
+        <p>Builds bone density</p>
+        <p>Reduces stress</p>
+        <p>Eases depression</p>
+        <p>Provides a cardiovascular boost</p>
+        <P>Reduces blood glucose levels</P>
+        <P>Nourishes the skin</P>
+    </div>
+
+
+    <div id="started">
+        <h3>How to get started</h3>
+        <p><b>Wear lightweight, breathable fabrics</b> that can wick away your sweat.</p>
+        <p><b>Bring a towel to place over your yoga mat,</b> which may get a little slippery 
+            once you start sweating. You can also bring an extra towel for your face and hands.</p>
+        <p><b>Consider special gloves and socks</b> that can provide a better grip in a hot yoga studio.</p>
+        <p><b>Bring a large, insulated water bottle</b> filled with cold water that you can sip throughout 
+            your hot yoga session.</p>
+    </div>
+
+
+</body>
+</html>

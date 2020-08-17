@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hatha Yoga</title>
+    <link rel="stylesheet" href="{% static 'CSS/HathaY.css' %}">
+</head>
+<body>
+    
+
+    <ul >
+        <li><a href="/oneYoga">Home</a></li>
+        <li><a href="/suryaNamaskar">Surya Namaskar</a></li>
+        <li><a href="/BikramYoga">Bikram Yoga</a></li>
+        <li class="active"><a href="/HathaYoga">Hatha Yoga</a></li>
+        <li><a href="/VinyasaYoga">Vinyasa Yoga</a></li>
+        <li><a href="/KundaliniYoga">Kundalini Yoga</a></li>
+        <li><a href="/AnusaraYoga">Anusara Yoga</a></li>
+        <li><a href="/About">About</a></li>
+        <li><a href="#">Welcome, {{username}}</a></li>
+        <li><a href="Logout">Logout</a></li>
+    </ul>
+
+    <div id="Hatha">
+        <h1>Hatha Yoga</h1>
+        <p>The regular practice of Hatha Yoga enhances strength, flexibility, and balance and may offer 
+            some light to moderate aerobic conditioning as well, depending on the style practiced. Other 
+            benefits may be gained from incorporating breath work (pranayama) and meditation as part of, 
+            or in addition to, a Hatha Yoga practice.
+        </p>
+    </div>
+
+    <div id="benefits">
+        <h3>Benefits of hatha Yoga</h3>
+        <p>Core Strength</p>
+        <p>Bone Density</p>
+        <p>Healthy Heart</p>
+        <p>Healthy and Glowing Skin</p>
+        <p>Stronger Immunity</p>
+        <p>Weight Loss</p>
+    </div>
+
+    <div id="Hatha2">
+        <h1>“Hatha Yoga teaches us to use the body as the bow, asana as the arrow, and the soul as the target”</h1>
+    </div>
+
+    <div>
+        <img id="image" src="{% static 'IMAGE/Hatha01.jpg' %}">
+    </div>
+
+</body>
+</html>

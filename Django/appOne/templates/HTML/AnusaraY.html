@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anusara</title>
+    <link rel="stylesheet" href="{% static 'CSS/AnusaraY.css' %}">
+</head>
+<body>
+
+
+    <ul >
+        <li><a href="/oneYoga">Home</a></li>
+        <li><a href="/suryaNamaskar">Surya Namaskar</a></li>
+        <li><a href="/BikramYoga">Bikram Yoga</a></li>
+        <li><a href="/HathaYoga">Hatha Yoga</a></li>
+        <li><a href="/VinyasaYoga">Vinyasa Yoga</a></li>
+        <li><a href="/KundaliniYoga">Kundalini Yoga</a></li>
+        <li class="active"><a href="/AnusaraYoga">Anusara Yoga</a></li>
+        <li><a href="/About">About</a></li>
+        <li><a href="#">Welcome, {{username}}</a></li>
+        <li><a href="/Logout">Logout</a></li>
+    </ul>
+
+
+    <div id="anusara3">
+        <P id="p1"><b id="b1">Anusara Yoga:</b> The ultimate goal of Anusara yoga practice is to align with the Divine. 
+            This is achieved by practicing the 3 A's: <br>
+            <b>Attitude:</b>
+            Awakening the heart and making it the foundation of your practice, 
+            including the desire to align with the Divine. <br>
+            <b>Alignment:</b>
+            Awareness of the connections between parts of ourselves. <br>
+            <b>Action:</b>
+            Natural flow of energy, leading to stability and joy.</P>
+        
+    </div>
+
+    <div id="anusara">
+        <h2>Anusara emphasizes “Universal Principles of Alignment” as the focal point of its practice, 
+            which underlie all of the physical asanas.</h2>
+    </div>
+
+    <div id="anusara2">
+        <h2>Anusara Yoga Poses</h2>
+        <p>The Half Moon Pose (Ardha Chandrasana)</p>
+        <p>The Half Moon Pose (Ardha Chandrasana)</p>
+        <p>The Warrior Pose (Virbhadrasana)</p>
+        <p>The Eagle Pose (Garudasana)</p>
+        <p>The extended hand to toe pose (Uttitha Hasta Padangustana)</p>
+        <p>The cobra pose (Bhujangasana)</p>
+        <p>The Dog Pose (Ardha Mukha Shavasana)</p>
+    </div>
+
+    <img id="image" src="{% static 'IMAGE/anusara1.jpeg' %}">
+
+    <script type = "text/javascript">
+        var image = document.getElementById("image");
+        var currentPos = 0;
+        var images = ["{% static 'IMAGE/anusara1.jpeg' %}", "{% static 'IMAGE/anusara2.jpeg' %}",
+        "{% static 'IMAGE/anusara03.jpg' %}", "{% static 'IMAGE/anusara4.jpeg' %}", "{% static 'IMAGE/anusara5.jpeg' %}",
+        "{% static 'IMAGE/anusara6.jpeg' %}", "{% static 'IMAGE/anusara07.jpg' %}"]
+
+        function volgendefoto() {
+            if (++currentPos >= images.length)
+                currentPos = 0;
+
+            image.src = images[currentPos];
+        }
+
+        setInterval(volgendefoto, 3000);
+    </script>
+    
+</body>
+</html>

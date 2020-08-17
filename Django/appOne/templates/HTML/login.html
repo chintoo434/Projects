@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function display_c(){
+            var refresh=1000; // Refresh rate in milli seconds
+            mytime=setTimeout('display_ct()',refresh)
+            }
+
+            function display_ct() {
+            var strcount
+            var x = new Date()
+            document.getElementById('ct').innerHTML = x;
+            tt=display_c();
+            }
+        </script>
+
+        <title>Login</title>
+        <link rel="stylesheet" href="{% static 'CSS/login.css' %}" type="text/css">
+    </head>
+    <body onload="display_c()">
+        <span id="ct">Wed Apr 01 2020 21:51:08 GMT+0530 (India Standard Time)</span>
+        <h1 id="login">Login Here</h1>
+        <div id="div_1">
+            <form action="login" method="POST" id="form_1">
+
+                {% csrf_token %}
+
+                <div class="div_2">
+                    <input type="text" name="username" id="input_1">
+                    <p id="username">Username</p>
+                </div>
+                <div class="div_4">
+                    <input type="password" name="password" id="input_2">
+                    <p id="password">Password</p>
+                </div>
+                <div id="div_6">
+                    <a href="/register" id="a1">Register here</a>
+                    <a href="/forgotpasswd" id="a2">Forgot password</a>
+                </div>
+                <div id="div_7">
+                    <input type="submit" id="input_3" value="Login">
+                </div>
+            </form>
+        </div>
+
+        </div>
+    <div >
+        {% for mes in messages %}
+        <h5 id="error">{{mes}}</h5>
+        {% endfor %}
+    </div>
+
+    </body>
+</html>

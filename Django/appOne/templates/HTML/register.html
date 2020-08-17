@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+
+        <link rel="stylesheet" href="{% static 'CSS/register.css' %}" type="text/css">
+
+        <script type="text/javascript">
+            function display_c(){
+            var refresh=1000; // Refresh rate in milli seconds
+            mytime=setTimeout('display_ct()',refresh)
+            }
+
+            function display_ct() {
+            var strcount
+            var x = new Date()
+            document.getElementById('ct').innerHTML = x;
+            tt=display_c();
+            }
+        </script>
+
+    </head>
+    <body onload="display_c()">
+    <span id="ct">Wed Apr 01 2020 21:51:08 GMT+0530 (India Standard Time)</span>
+
+        <h3 id="welcome">
+            <p id="p_head">Welcome To</p>
+
+        </h3>
+        <h2 id="registration">Registration</h2>
+        <div id="div_1">
+            <form action="register" method="POST" id="form_1">
+                {% csrf_token %}
+                <div id="div_2">
+                    <input type="text" name="first_name" id="input_1">
+                    <p id="firstname">First Name</p>
+                </div>
+
+                <div id="div_4">
+                    <input type="text" name="last_name" id="input_2">
+                    <p id="lastname">Last Name</p>
+                </div>
+
+                <div id="div_6">
+                    <input type="text" name="username" id="input_3">
+                    <p id="username">Username</p>
+                </div>
+
+                <div id="div_8">
+                    <input type="email" name="email" id="input_4">
+                    <p id="email">e-mail</p>
+                </div>
+
+                <div id="div_10">
+                    <input type="password" name="password1" id="input_5">
+                    <p id="password">Password</p>
+                </div>
+
+                <div id="div_12">
+                    <input type="password" name="password2" id="input_6">
+                    <p id="confirm">Comfirm</p>
+                </div>
+
+                <a href="/login" ><p id="p3">Login Here</p></a>
+                <input type="submit" id="register" value="Register">
+            </form>
+
+            <div >
+                {% for mes in messages %}
+                    <h5 id="error">{{mes}}</h5>
+                {% endfor %}
+            </div>
+    </div>
+
+
+
+
+    </body>
+</html>

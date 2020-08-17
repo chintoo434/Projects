@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundalini Yoga</title>
+    <link rel="stylesheet" href="{% static 'CSS/KundaliniY.css' %}">
+</head>
+<body>
+    
+
+    <ul >
+        <li><a href="/oneYoga">Home</a></li>
+        <li><a href="/suryaNamaskar">Surya Namaskar</a></li>
+        <li><a href="/BikramYoga">Bikram Yoga</a></li>
+        <li><a href="/HathaYoga">Hatha Yoga</a></li>
+        <li><a href="/VinyasaYoga">Vinyasa Yoga</a></li>
+        <li class="active"><a href="/KundaliniYoga">Kundalini Yoga</a></li>
+        <li><a href="/AnusaraYoga">Anusara Yoga</a></li>
+        <li><a href="/About">About</a></li>
+        <li><a href="#">Welcome, {{username}}</a></li>
+        <li><a href="/Logout">Logout</a></li>
+    </ul>
+
+
+    <div id="Kundalini">
+        <h1>Kundalini Yoga</h1>
+        <h3>An uplifting blend of spiritual and physical practices, Kundalini Yoga incorporates movement, 
+            dynamic breathing techniques, meditation, and the chanting of mantras, such as Sat Nam, meaning 
+            "truth is my identity." The goal is to build physical vitality and increase consciousness.
+        </h3>
+    </div>
+
+    <div id="pose">
+        <h2>Kundalini Yoga Poses</h2>
+        <p>Lotus Pose (Padmasana)</p>
+        <p>Tree Pose (Vrkasana)</p>
+        <p>Corpse Pose (Savasana)</p>
+        <p>Cat-Cow Pose (Marjarasana-Bidalasana)</p>
+        <p>Cobra Pose (Bhujangasana)</p>
+    </div>
+
+
+    <div >
+        <video id="video" src="{% static 'IMAGE/Kundalini.mp4' %}" controls autoplay muted></video>
+    </div>
+
+    <div id="benefits">
+        <h2>Benefits</h2>
+        <P>Develop inner guidance</P>
+        <P>Increased vitality and wellbeing</P>
+        <P>Deep connection</P>
+        <P>Live mindfully</P>
+        <P>Increased positive energy</P>
+        <P>Control your thoughts and emotions</P>
+        <P>Control and reduce stress</P>
+        <P>Kundalini yoga is perfect for the modern day person</P>
+        <P>Connect with like-minded people</P>
+        <P>Increased spiritual connection</P>
+    </div>
+
+
+    <img id="image" src="{% static 'IMAGE/kundalini01.jpg' %}">
+
+    <script type = "text/javascript">
+        var image = document.getElementById("image");
+        var currentPos = 0;
+        var images = ["{% static 'IMAGE/kundalini01.jpg' %}", "{% static 'IMAGE/kundalini2.jpg' %}",
+        "{% static 'IMAGE/kundalini3.jpg' %}", "{% static 'IMAGE/kundalini4.jpg' %}", "{% static 'IMAGE/kundalini5.jpg' %}",
+        "{% static 'IMAGE/kundalini6.jpg' %}", "{% static 'IMAGE/kundalini7.jpg' %}", "{% static 'IMAGE/kundalini8.jpg' %}",
+        "{% static 'IMAGE/kundalini9.jpg' %}", "{% static 'IMAGE/kundalini10.jpg' %}", "{% static 'IMAGE/kundalini11.jpg' %}"]
+
+        function volgendefoto() {
+            if (++currentPos >= images.length)
+                currentPos = 0;
+
+            image.src = images[currentPos];
+        }
+
+        setInterval(volgendefoto, 3000);
+    </script>
+
+
+</body>
+</html>

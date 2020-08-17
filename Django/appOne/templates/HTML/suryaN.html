@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya Namaskar</title>
+    <link rel="stylesheet" href="{% static 'CSS/suryaN.css' %}">
+</head>
+<body>
+
+
+    <ul >
+        <li><a href="/oneYoga">Home</a></li>
+        <li class="active"><a href="#">Surya Namaskar</a></li>
+        <li><a href="/BikramYoga">Bikram Yoga</a></li>
+        <li><a href="/HathaYoga">Hatha Yoga</a></li>
+        <li><a href="/VinyasaYoga">Vinyasa Yoga</a></li>
+        <li><a href="/KundaliniYoga">Kundalini Yoga</a></li>
+        <li><a href="/AnusaraYoga">Anusara Yoga</a></li>
+        <li><a href="/About">About</a></li>
+        <li><a href="#">Welcome, {{username}}</a></li>
+        <li><a href="/Logout">Logout</a></li>
+    </ul>
+    <div >
+        <video id="video" src="{% static 'IMAGE/suryaVideo.mp4' %}" controls autoplay muted></video>
+    </div>
+    <div id="ifyou">
+        <h1>Surya Namaskara</h1>
+        <h2>If you find very little time to spare for a daily workout regime but want to stay fit,
+             there is nothing better than Surya Namaskar.
+        </h2>
+    </div>
+    <div id="SuryaNamaskar">
+        <h2>Surya Namaskar or Sun Salutation is a set of 12 powerful yoga asanas (postures) which 
+            provide a great cardiovascular workout. It's also a great way to stay fit, and retain 
+            the peace of your mind and soul.
+        </h2>
+    </div>
+
+    
+    <img id="image" src="{% static 'IMAGE/sun.jpg' %}">
+
+    <script type = "text/javascript">
+        var image = document.getElementById("image");
+        var currentPos = 0;
+        var images = ["{% static 'IMAGE/sun.jpg' %}", "{% static 'IMAGE/Pranamasana.jpg' %}", "{% static 'IMAGE/Hastauttanasana.jpg' %}",
+        "{% static 'IMAGE/HastaPadasana.jpg' %}","{% static 'IMAGE/AshwaSanchalanasana.jpg' %}",
+        "{% static 'IMAGE/Dandasana.jpg' %}", "{% static 'IMAGE/AshtangaNamaskara.jpg' %}", "{% static 'IMAGE/Bhujangasana.jpg' %}",
+        "{% static 'IMAGE/parvatasana.jpg' %}", "{% static 'IMAGE/AshwaSanchalanasana2.jpg' %}",
+        "{% static 'IMAGE/HastaPadasana2.jpg' %}", "{% static 'IMAGE/Hastauttanasana2.jpg' %}", "{% static 'IMAGE/Pranamasana2.jpg' %}"]
+
+        function volgendefoto() {
+            if (++currentPos >= images.length)
+                currentPos = 0;
+
+            image.src = images[currentPos];
+        }
+
+        setInterval(volgendefoto, 3000);
+    </script>
+
+
+
+    <div id="Pranamasana">
+        <h3>1. Pranamasana</h3>
+        <p>Also known as prayer pose, Pranamasana is the start of your Surya Namaskar. Stand 
+                upright on your mat with your both feet closely aligned. Inhale deeply, expanding 
+                your chest and relaxing your shoulders.
+        </p>
+        <p>While you inhale, raise your arms from the sides. And as you exhale, join your palms 
+                together as if praying in front of deity. This is the Pratham Namaskar or first 
+                salutation towards the sun.
+        </p>
+    </div>
+
+    <div id="Hastauttanasana">
+        <h3>2. Hastauttanasana</h3>
+        <p>Keeping the palms joined in the previous prayer position, breathe in and lift your arms
+                 up and bend backwards slightly. Your biceps should lie close to your ears. This posture
+                  is to loosen up your body by stretching the entire body backwards, standing at your tip 
+                  toes.
+        </p>
+    </div>
+        
+    <div id="HastaPadasana">
+        <h3>3. Hasta Padasana</h3>
+        <p>Now breathe out, and bend forward from the waist. Go down and touch you’re the ground but keeping 
+            your spine erect. Do this as your exhale slowly and completely.
+        </p>
+    </div>
+
+
+    <div id="AshwaSanchalanasana">
+        <h3>4. Ashwa Sanchalanasana</h3>
+        <p>Now breathe in, and stretch your body parallely to the ground. Keep your hands to the side, and bring 
+            your right knee towards the right part of the chest and let your left leg stretch behind. Look up.
+        </p>
+    </div>
+
+    <div id="Dandasana">
+        <h3>5. Dandasana</h3>
+        <p>Now as your inhale, fling your right leg also backwards aligning your entire body parallely to the ground.
+        </p>
+    </div>
+
+    <div id="AshtangaNamaskara">
+        <h3>6. Ashtanga Namaskara</h3>
+        <p>This is also known as giving salutations using eight parts or points. After staying in Dandasana, gently 
+            bring down your knees towards the floor and exhale. Now bring your chin to rest on the floor, keep your 
+            hops elevated in the air. Hence, your eight parts which are two hands, two knees, chin and chest will 
+            rest on the floor while your hip stays elevated in the air.
+        </p>
+    </div>
+
+    <div id="Bhujangasana">
+        <h3>7. Bhujangasana</h3>
+        <p>This is also known as Cobra pose. This is simply aligning your chest and torso 90 degrees to the ground, 
+            keeping your legs and mid-section flat on the ground. Make sure you use your hands to support your body 
+            and are not tempted to transfer your entire weight onto them.
+        </p>
+    </div>
+
+    <div id="Parvatasana">
+        <h3>8. Parvatasana</h3>
+        <p>Again, return to the parvatasana from bhujangasana. Keep your palm and feet where they are, and slowly raise 
+            your mid-section. Breathe out as you enter parvatasana.
+        </p>
+    </div>
+
+    <div id="AshwaSanchalanasana2">
+        <h3>9. Ashwa Sanchalanasana</h3>
+        <p>Now from Parvatasana, return to the ashwa sanchalanasana. But this time, we do the opposite of what we did in 
+            the 4th step. Procedure- Bring your right foot forward, while resting the left foot behind, at its original 
+            position.
+        </p>
+    </div>
+
+    <div id="HastaPadasana2">
+        <h3>10. Hasta Padasana</h3>
+        <p>Now slowly bring your left foot forward, next to the right foot as you exhale. Keeping the position of your 
+            hands intact, lift yourself up to slowly enter Hasta Padasana.
+        </p>
+    </div>
+
+
+    <div id="Hastauttanasana2">
+        <h3>11. Hastauttanasana</h3>
+        <p>Now inhale, raise your hands upward, and bend backward to enter Ardha Chakra Asana.</p>
+    </div>
+
+    <div id="Pranamaasana2">
+        <h3>12. Pranama asana</h3>
+        <p>Finally, exhale and stand in a relaxed manner in the namaskara mudra. Feel the positive vibrations in 
+            your body. This is how you complete one repetition of Surya Namaskar. Twelve repetitions of this 
+            holistic exercise are said to yield maximum benefit.</p>
+    </div>
+    <div id="cap">
+    <h4>Video for Surya Namaskar</h4>
+
+    </div>
+</body>
+</html>
